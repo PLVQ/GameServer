@@ -1,0 +1,9 @@
+package comm
+
+const (
+	_ int32 = iota
+	STATUS_START
+	STATUS_HANDSHAKE
+	STATUS_WORKING
+	STATUS_CLOSED
+)

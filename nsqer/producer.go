@@ -47,5 +47,5 @@ var NsqProducer *nsqProducer
 
 func init() {
 	NsqProducer = &nsqProducer{}
-	NsqProducer.producer, _ = initProducer("127.0.0.1:4150")
+	NsqProducer.producer, _ = initProducer("192.168.168.128:4150")
 }

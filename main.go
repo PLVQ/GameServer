@@ -1,11 +1,11 @@
 package main
 
 import (
-	"gameServer/game/logic"
 	"gameServer/nsqer"
+	"gameServer/nsqhandle"
 )
 
 func main() {
-	logic.Init()
-	nsqer.InitConsuemr("client", "test")
+	nsqHandle := nsqhandle.NewClientMsgConsumer()
+	nsqer.InitConsuemr("client", "test", nsqHandle)
 }
